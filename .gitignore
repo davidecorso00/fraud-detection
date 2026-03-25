@@ -24,3 +24,10 @@ mlruns/
 # OS
 .DS_Store
 EOF
+
+# VS Code
+.vscode/
+
+# MLflow database
+mlflow.db
+mlruns/
