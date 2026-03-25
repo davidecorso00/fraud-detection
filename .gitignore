@@ -23,7 +23,6 @@ mlruns/
 
 # OS
 .DS_Store
-EOF
 
 # VS Code
 .vscode/
