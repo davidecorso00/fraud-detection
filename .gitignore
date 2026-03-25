@@ -1,0 +1,26 @@
+cat > .gitignore << 'EOF'
+# Dati (gestiti da DVC, non da Git)
+data/raw/
+data/processed/
+data/features/
+
+# Modelli
+models/
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+
+# MLflow
+mlruns/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS
+.DS_Store
+EOF
