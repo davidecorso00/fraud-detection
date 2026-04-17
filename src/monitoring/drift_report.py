@@ -46,7 +46,9 @@ def build_report(reference: pd.DataFrame, current: pd.DataFrame) -> Report:
 def main() -> None:
     REPORTS_DIR.mkdir(parents=True, exist_ok=True)
 
-    reference, current = load_reference_and_current()
+    # PROCESSED_FILE passato esplicito per rispettare i monkeypatch nei test
+    # (i default delle funzioni sono valutati a import-time, non a runtime).
+    reference, current = load_reference_and_current(PROCESSED_FILE)
     report = build_report(reference, current)
     report.save_html(str(REPORT_FILE))
 
