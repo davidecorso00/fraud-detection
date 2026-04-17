@@ -31,3 +31,6 @@ EOF
 # MLflow database
 mlflow.db
 mlruns/
+
+# Evidently reports
+reports/
