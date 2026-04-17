@@ -5,7 +5,7 @@ data/processed/
 data/features/
 
 # Modelli
-models/
+/models/
 
 # Python
 __pycache__/
@@ -23,6 +23,7 @@ mlruns/
 
 # OS
 .DS_Store
+EOF
 
 # VS Code
 .vscode/
